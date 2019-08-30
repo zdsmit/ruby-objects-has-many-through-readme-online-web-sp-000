@@ -16,7 +16,8 @@ class Waiter
     @@all
   end
 
-  def new_meal
+  def new_meal(customer, total, tip)
+    new_meal = Meal.new(self, customer, total, tip)
   end
 
   def meals
